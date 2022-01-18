@@ -3,7 +3,9 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost/express-sample');
+
 require('./models/UserModel');
+require('./models/ArticleModel');
 
 var app = express();
 var routes = require('./routes');
